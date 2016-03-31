@@ -24,7 +24,7 @@ namespace DataAccess.Data
                 uVote.Id = Convert.ToInt32(element[0]);
                 uVote.Data = element[1];
                 uVote.Ip = element[2];
-                uVote.Login = element[3];
+                uVote.Login = element[3].Split(' ')[0];
                 uVote.Vote = Convert.ToInt32(4);
                 if (login.Equals(uVote.Login) && id < uVote.Id)
                     uVotes.Add(uVote);

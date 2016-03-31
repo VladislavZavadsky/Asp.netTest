@@ -18,7 +18,7 @@ namespace DataAccess.DB
             var gold = 0;
             User user = GetUserFromDb(connectionString, login);
 
-            if (!VerifyUser(password, user.Password.Split(' ')[0]))
+            if (!VerifyUser(password, user.Password))
                 return -1;
             List<UVote> uVotes = new FileSpliter().GetUVote(user.Id, user.Login);
             foreach (var uVote in uVotes)
@@ -45,8 +45,8 @@ namespace DataAccess.DB
                 while (reader.Read())
                 {
                     user.Id = reader.GetInt32(0);
-                    user.Login = reader.GetString(1);
-                    user.Password = reader.GetString(2);
+                    user.Login = reader.GetString(1).Split(' ')[0];
+                    user.Password = reader.GetString(2).Split(' ')[0];
                     user.Gold = reader.GetInt32(3);
                 }
                 
@@ -72,7 +72,7 @@ namespace DataAccess.DB
             }
 
             StringComparer comparer = StringComparer.OrdinalIgnoreCase;
-            //24c9e15e52afc47c225b757e7bee1f9d
+
             if (0 == comparer.Compare(sBuilder.ToString(), hashedPass))
             {
                 md5Hash.Dispose();
