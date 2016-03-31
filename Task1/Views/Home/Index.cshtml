@@ -1,0 +1,35 @@
+﻿@model Task1.Views.Home.ViewModels.Authorization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Scripts.Render("~/scripts/jquery-1.10.2.min.js",
+    "~/Scripts/jquery.unobtrusive-ajax.js",
+    "~/Scripts/jquery.validate.js",
+    "~/Scripts/jquery.validate.unobtrusive.js")
+    @Styles.Render("~/Content/myStyles.css")
+    <title>Task 1</title>
+</head>
+<body align="center">
+    <h2>LogIn</h2>
+    @using (Ajax.BeginForm("Authorization", new AjaxOptions { HttpMethod = "PATCH", OnSuccess = "OnSeccess" }))
+    {
+        <div>
+            @Html.Label("LogIn")
+            <div id="result"></div>
+            <div>
+                @Html.EditorFor(m => m.Login)
+                @Html.ValidationMessageFor(m => m.Login)
+            </div>
+            <div>
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <input type="submit" value="LogIn" /><br />
+        </div>
+    }
+</body>
+</html>

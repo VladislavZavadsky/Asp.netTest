@@ -1,0 +1,5 @@
+E:\KPI\Practice\Task1\Task1\DataAccess\bin\Debug\DataAccess.dll
+E:\KPI\Practice\Task1\Task1\DataAccess\bin\Debug\DataAccess.pdb
+E:\KPI\Practice\Task1\Task1\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\KPI\Practice\Task1\Task1\DataAccess\obj\Debug\DataAccess.dll
+E:\KPI\Practice\Task1\Task1\DataAccess\obj\Debug\DataAccess.pdb

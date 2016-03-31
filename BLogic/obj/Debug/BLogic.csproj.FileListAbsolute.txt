@@ -1,0 +1,9 @@
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\BLogic.dll
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\BLogic.pdb
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\Service.dll
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\DataAccess.dll
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\Service.pdb
+E:\KPI\Practice\Task1\Task1\BLogic\bin\Debug\DataAccess.pdb
+E:\KPI\Practice\Task1\Task1\BLogic\obj\Debug\BLogic.csprojResolveAssemblyReference.cache
+E:\KPI\Practice\Task1\Task1\BLogic\obj\Debug\BLogic.dll
+E:\KPI\Practice\Task1\Task1\BLogic\obj\Debug\BLogic.pdb

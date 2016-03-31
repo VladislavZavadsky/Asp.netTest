@@ -1,0 +1,7 @@
+E:\KPI\Practice\Task1\Task1\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+E:\KPI\Practice\Task1\Task1\Service\bin\Debug\Service.dll
+E:\KPI\Practice\Task1\Task1\Service\bin\Debug\Service.pdb
+E:\KPI\Practice\Task1\Task1\Service\bin\Debug\DataAccess.dll
+E:\KPI\Practice\Task1\Task1\Service\bin\Debug\DataAccess.pdb
+E:\KPI\Practice\Task1\Task1\Service\obj\Debug\Service.dll
+E:\KPI\Practice\Task1\Task1\Service\obj\Debug\Service.pdb
