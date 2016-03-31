@@ -10,7 +10,6 @@
     "~/Scripts/jquery.unobtrusive-ajax.js",
     "~/Scripts/jquery.validate.js",
     "~/Scripts/jquery.validate.unobtrusive.js")
-    @Styles.Render("~/Content/myStyles.css")
     <title>Task 1</title>
 </head>
 <body align="center">
@@ -18,7 +17,6 @@
     @using (Ajax.BeginForm("Authorization", new AjaxOptions { HttpMethod = "PATCH", OnSuccess = "OnSeccess" }))
     {
         <div>
-            @Html.Label("LogIn")
             <div id="result"></div>
             <div>
                 @Html.EditorFor(m => m.Login)
@@ -28,8 +26,13 @@
                 @Html.PasswordFor(m => m.Password)
                 @Html.ValidationMessageFor(m => m.Password)
             </div>
-            <input type="submit" value="LogIn" /><br />
+            <input type="submit" value="LogIn"/><br/>
         </div>
+        <script type="text/javascript">
+            function OnSeccess(data) {
+                $("#result").html(data);
+            }
+        </script>
     }
 </body>
 </html>
