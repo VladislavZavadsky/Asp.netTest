@@ -23,7 +23,7 @@ namespace DataAccess.Data
                 var element = currentRow.Split('\t');
                 uVote.Id = Convert.ToInt32(element[0]);
                 uVote.Data = element[1];
-                uVote.Ip = element[2];
+                uVote.IP = element[2];
                 uVote.Login = element[3].Split(' ')[0];
                 uVote.Vote = Convert.ToInt32(4);
                 if (login.Equals(uVote.Login) && id < uVote.Id)
